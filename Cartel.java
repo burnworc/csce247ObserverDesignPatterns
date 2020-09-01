@@ -9,7 +9,7 @@ public class Cartel implements Observer {
 	private ArrayList<Sighting> sightings;
 	
 	/**
-	 * Constructor methods for cook and sightings
+	 * methods for cook and sightings
 	 * @param cook
 	 */
 	public Cartel(Subject cook) {
@@ -28,10 +28,9 @@ public class Cartel implements Observer {
 		this.cook = cook;
 	}
 	/**
-	 * method for updating location and description
+	 * updating location and description
 	 */
-	public void update(String location, String description)
-	{
+	public void update(String location, String description) {
 		sightings.add(new Sighting(location, description));
 	}
 	/**
